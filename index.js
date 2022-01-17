@@ -38,7 +38,7 @@ module.exports = {
    */
   loadVideo: function(videoID) {
     if(this.player) {
-        this.player.loadVideoById(videoID);    
+        this.player.loadVideoById(videoID,0,'small');    
     } else {
         console.log('You should create.');
     }
