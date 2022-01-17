@@ -69,6 +69,14 @@ module.exports = {
   pause: function() {
     this.player.pauseVideo();
   },
+   /**
+   * Sets the volume of the the currently playing video.
+   * https://developers.google.com/youtube/iframe_api_reference#setVolume
+   * @return void
+   */
+  setVolume: function(amount) {
+    this.player.setVolume(amount);
+  },
   /**
    * Seeks to a specified time in the video. If the player is paused when the function is called, it will remain paused. 
    * https://developers.google.com/youtube/iframe_api_reference#seekTo
