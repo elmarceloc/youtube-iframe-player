@@ -86,7 +86,15 @@ module.exports = {
   getCurrentTime: function() {
     this.player.getCurrentTime();
   },
-
+    /**
+   * Returns the duration in seconds of the currently playing video. Note that getDuration() will return 0 until the video's metadata is loaded, which normally happens just after the video starts playing.
+   * https://developers.google.com/youtube/iframe_api_reference#getDuration
+   * @return duration    the duration in seconds of the currently playing video
+   */
+  getDuration: function() {
+    this.player.getDuration();
+  },
+    
   /**
    * Seeks to a specified time in the video. If the player is paused when the function is called, it will remain paused. 
    * https://developers.google.com/youtube/iframe_api_reference#seekTo
