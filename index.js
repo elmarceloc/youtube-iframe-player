@@ -77,6 +77,16 @@ module.exports = {
   setVolume: function(amount) {
     this.player.setVolume(amount);
   },
+   /**
+   * Returns the elapsed time in seconds since the video started playing.
+   * https://developers.google.com/youtube/iframe_api_reference#getCurrentTime
+   * @return time    the emplased time in seconds since the video started playing
+   */
+  
+  getCurrentTime: function() {
+    this.player.getCurrentTime();
+  },
+
   /**
    * Seeks to a specified time in the video. If the player is paused when the function is called, it will remain paused. 
    * https://developers.google.com/youtube/iframe_api_reference#seekTo
